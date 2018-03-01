@@ -1,0 +1,23 @@
+{% extends '::layouthome.html.twig'%}
+{% block body %}
+    {{ produit.titre }}
+    {{ produit.prix }}
+    {{ produit.description }}
+
+    <div id="reviews">
+        {% for rating in ratings %}
+            <ul>
+                <li>{{ rating.avis }}       {{ rating.rating|rating }} </li>
+            {#{% if is_granted('ROLE_CLIENT') %}
+                {% if app.user.id == rating.user.id %}
+                <li><a href="{{ path('remove_review', {'product_id':rating.produit.idProduit}) }}">Supprimer</a></li>
+                {% endif %}
+                {% endif %}#}
+            </ul>
+        {% endfor %}
+    </div>
+
+    {% if is_granted('ROLE_CLIENT') %}
+    {{ form(form) }}
+        {% endif %}
+{% endblock %}

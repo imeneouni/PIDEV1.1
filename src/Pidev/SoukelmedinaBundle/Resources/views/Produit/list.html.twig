@@ -1,0 +1,36 @@
+{% extends '::layoutback.html.twig'%}
+{% block body %}
+
+<h1>liste des produits</h1>
+
+<table class="table">
+
+
+    <tr>
+
+        <td>idProduit</td>
+        <td>titre</td>
+        <td>quantité</td>
+        <td>supprimer</td>
+        <td>modifier</td>
+
+    </tr>
+
+    {% for produit in produits %}
+    <tr>
+        <td>{{ produit.idProduit}}</td>
+        <td>{{ produit.titre}}</td>
+        <td>{{ produit.quantity}}</td>
+        <td> <a href ="{{ path("pidev_soukelmedina_deleteP",{'idProduit':produit.idProduit}) }}">supprimer</a></td>
+        <td> <a href ="{{ path("pidev_soukelmedina_updateP",{'idProduit':produit.idProduit}) }}">modifier</a></td>
+
+    </tr>
+
+    {% endfor %}
+
+
+
+
+
+</table>
+{% endblock %}

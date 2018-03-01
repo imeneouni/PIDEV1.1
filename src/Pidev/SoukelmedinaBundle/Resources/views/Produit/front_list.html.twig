@@ -1,0 +1,3 @@
+{% for produit in produits %}
+    <li><a href="{{ path('front_produit',{id:produit.idProduit}) }}">{{ produit.titre }}</a></li>
+{% endfor %}

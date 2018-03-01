@@ -1,0 +1,3 @@
+{% for categorie in categories %}
+    <li><a href="{{ path('front_categorie',{id:categorie.idCat}) }}">{{ categorie.nomCat }}</a></li>
+{% endfor %}

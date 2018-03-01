@@ -1,0 +1,36 @@
+{% extends '::layoutback.html.twig'%}
+{% block body %}
+
+<h1>liste des catégories</h1>
+
+<table class="table">
+
+
+    <tr>
+
+        <td>idCat</td>
+        <td>nomCat</td>
+        <td>sousCat</td>
+        <td>supprimer</td>
+        <td>modifier</td>
+
+    </tr>
+
+    {% for categorie in categories %}
+    <tr>
+        <td>{{ categorie.idCat}}</td>
+        <td>{{ categorie.nomCat}}</td>
+        <td>{{ categorie.sousCat}}</td>
+        <td> <a href ="{{ path("pidev_soukelmedina_deleteC",{'idCat':categorie.idCat}) }}">supprimer</a></td>
+        <td> <a href ="{{ path("pidev_soukelmedina_updateC",{'idCat':categorie.idCat}) }}">modifier</a></td>
+
+    </tr>
+
+    {% endfor %}
+
+
+
+
+
+</table>
+{% endblock %}

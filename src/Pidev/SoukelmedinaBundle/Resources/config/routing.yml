@@ -1,0 +1,155 @@
+pidev_soukelmedina_homepage:
+    path:     /
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:index }
+testP:
+    path:     /test
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:test }
+testback:
+    path:     /testback
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:testback }
+about:
+    path:     /about
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:about }
+blog:
+    path:     /blog
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:blog}
+blog_single:
+    path:     /blogsingle
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:blog_single}
+blog_three_column:
+    path:     /blogthreecolumn
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:blog_three_column }
+blog_two_column:
+    path:     /blog_two_column
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:blog_two_column }
+contact:
+    path:     /contact
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:contact }
+gallery:
+    path:     /gallery
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:gallery }
+gallery_3_column:
+    path:     /gallery3column
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:gallery_3_column}
+gallery_4_column:
+    path:     /gallery4column
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:gallery_4_column }
+gallery_fullwidth:
+    path:     /galleryfullwidth
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:gallery_fullwidth}
+categorie:
+    path:     /categorie
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:categorie}
+categorie1:
+    path:     /categorie1
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:categorie1}
+categorie2:
+    path:     /categorie2
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:categorie2}
+categorie3:
+    path:     /categorie3
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:categorie3}
+services:
+    path:     /services
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:services}
+shop:
+    path:     /shop
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:shop}
+shop_single:
+    path:     /shopsingle
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:shop_single}
+erreur:
+    path:     /erreur
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:erreur }
+Actualite:
+    path:     /actualite
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:actualite }
+boutique:
+    path:     /boutique
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:boutique }
+artisan:
+    path:     /artisan
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:artisan }
+evenement:
+    path:     /evenement
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:evenement }
+profile:
+    path:     /profile
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:profile }
+Forum:
+    path:     /Forum
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:Forum }
+pannier:
+    path:     /pannier
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:pannier }
+icons:
+    path:     /icons
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:icons}
+maps:
+    path:     /maps
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:maps}
+notifications:
+    path:     /notifications
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:notifications}
+table:
+    path:     /table
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:table}
+template:
+    path:     /template
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:template}
+typography:
+    path:     /typography
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:typography}
+upgrade:
+    path:     /upgrade
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:upgrade}
+user:
+    path:     /user
+    defaults: { _controller: PidevSoukelmedinaBundle:Default:user}
+pidev_soukelmedina_ajoutC:
+    path:     admin/categorie/ajout
+    defaults: { _controller: PidevSoukelmedinaBundle:Categorie:ajout }
+pidev_soukelmedina_listC:
+    path:     admin/categorie/list
+    defaults: { _controller: PidevSoukelmedinaBundle:Categorie:list }
+pidev_soukelmedina_deleteC:
+    path:     admin/categorie/delete/{idCat}
+    defaults: { _controller: PidevSoukelmedinaBundle:Categorie:delete}
+pidev_soukelmedina_updateC:
+    path:     admin/categorie/update/{idCat}
+    defaults: { _controller: PidevSoukelmedinaBundle:Categorie:update}
+
+
+front_categorie:
+    path:     /categorie/{id}
+    defaults: { _controller: PidevSoukelmedinaBundle:Categorie:categorieFront }
+
+product_detail_page:
+    path:     /produit/detail
+    defaults: { _controller: PidevSoukelmedinaBundle:Produit:productDetail }
+
+remove_review:
+    path:     /review/remove
+    defaults: { _controller: PidevSoukelmedinaBundle:Produit:productDetail }
+pidev_soukelmedina_ajoutP:
+    path:     admin/produit/ajout
+    defaults: { _controller: PidevSoukelmedinaBundle:Produit:ajout }
+pidev_soukelmedina_listP:
+    path:     admin/produit/list
+    defaults: { _controller: PidevSoukelmedinaBundle:Produit:list }
+pidev_soukelmedina_deleteP:
+    path:     admin/produit/delete/{idProduit}
+    defaults: { _controller: PidevSoukelmedinaBundle:Produit:delete}
+pidev_soukelmedina_updateP:
+    path:     admin/produit/update/{idProduit}
+    defaults: { _controller: PidevSoukelmedinaBundle:Produit:update}
+
+
+front_produit:
+    path:     /produit/{id}
+    defaults: { _controller: PidevSoukelmedinaBundle:Produit:produitFront }
+
+
+
+
+

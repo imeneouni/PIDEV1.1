@@ -1,0 +1,17 @@
+{% extends '::layouthome.html.twig' %}
+
+{% block header %}{{ parent() }}
+    {% block title %} <title>home_style1</title>{% endblock %}{% endblock %}
+{% block body %}
+    <p id ="p"><a href="{{ path('pidev_soukelmedina_ajoutC')}}"> ajouter </a></p>
+
+    <p id ="p"><a href="{{ path('pidev_soukelmedina_listC')}}"> lister </a></p>
+
+
+{% endblock %}
+
+
+
+{% block footer %}
+    {{ parent() }}
+{% endblock %}
